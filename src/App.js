@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./App.css";
 
 //Componentes
-import Header from "./components/header"
+import Header from "./components/header/header"
 
 class App extends Component {
   render () {

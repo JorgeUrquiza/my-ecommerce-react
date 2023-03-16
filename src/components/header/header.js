@@ -6,7 +6,7 @@ import "./header.css";
 const Header = () => {
     return (
         <>
-            <h1> MyCommerce</h1> 
+            <h1> Navbar</h1> 
         </>
     );
 };
