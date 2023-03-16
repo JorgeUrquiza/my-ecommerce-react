@@ -8,9 +8,9 @@ import NavBar from "./components/NavBar/NavBar";
 class App extends Component {
   render () {
     return (
-    <div className="Header"> 
+    <div className="Header">
+      <NavBar/> 
       <Header/>
-      <NavBar/>
     </div>
     )
   }
