@@ -5,7 +5,7 @@ import Carrito from "../Carrito/Carrito";
 const NavBar = () => {
     return ( 
         <nav className="Navigation">
-            <ul className="List-ul">
+            <ul>
                 <li className="NavLink">
                     <a href="https://github.com/JorgeUrquiza?tab=repositories"> Inicio </a>
                 </li>
