@@ -7,13 +7,13 @@ const NavBar = () => {
         <nav className="Navigation">
             <ul>
                 <li className="NavLink">
-                    <a href="https://github.com/JorgeUrquiza?tab=repositories"> Inicio </a>
+                    <a href="https://github.com/JorgeUrquiza?tab=repositories" target="_blank" rel="noopener noreferrer"> Inicio </a>
                 </li>
                 <li className="NavLink">
-                    <a href="https://github.com/JorgeUrquiza?tab=repositories"> Producto </a>
+                    <a href="https://github.com/JorgeUrquiza?tab=repositories" target="_blank" rel="noopener noreferrer"> Producto </a>
                 </li>
                 <li className="NavLink">
-                    <a href="https://github.com/JorgeUrquiza?tab=repositories"> Nosotros </a>
+                    <a href="https://github.com/JorgeUrquiza?tab=repositories" target="_blank" rel="noopener noreferrer"> Nosotros </a>
                 </li>
                 <li className="NavLink">
                     <Carrito/>
