@@ -13,10 +13,10 @@ class App extends Component {
       <NavBar/> 
       <Header/>      
       <div className="Cards">
-        <CardPet 
+        <CardPet
         name="Perros" 
         description="Mi perro me rompio el sillon!!! El mio la mesa!!!, ¿no necesitara un juguete?. Aqui encontras todo lo que necesitas para tus amigos perrunos..."
-        img="https://www.clarin.com/img/2021/07/24/kRVeytL9z_720x0__1.jpg"
+        img ="https://www.clarin.com/img/2021/07/24/kRVeytL9z_720x0__1.jpg"
         />
         <CardPet 
         name="Gatos" 
