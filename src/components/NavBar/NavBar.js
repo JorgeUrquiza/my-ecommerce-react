@@ -7,7 +7,7 @@ const NavBar = () => {
         <nav className="Navigation">
             <ul>
                 <li className="Name">
-                    <p>Deport Life</p>
+                    <p>Pet Shop</p>
                 </li>
                 <li className="NavLink">
                     <a href="https://github.com/JorgeUrquiza?tab=repositories" target="_blank" rel="noopener noreferrer"> Inicio </a>
