@@ -15,12 +15,12 @@ class App extends Component {
       <div className="Cards">
         <CardPet 
         name="Perros" 
-        description="Aqui encontras todo lo que necesitas para tus amigos perrunos..."
+        description="Mi perro me rompio el sillon!!! El mio la mesa!!!, ¿no necesitara un juguete?. Aqui encontras todo lo que necesitas para tus amigos perrunos..."
         img="https://www.clarin.com/img/2021/07/24/kRVeytL9z_720x0__1.jpg"
         />
         <CardPet 
         name="Gatos" 
-        description="Aqui encontras todo lo que necesitas para tus michis..."
+        description="Tenes un muichi? Entonces necesitas un baño, cepillos para el pelo y juguetes. Aqui encontras todo lo que necesitas para tus michis..."
         img="https://www.foyel.com/archivos/2/6/pediatria_felina_web.jpg"
         />
         <CardPet 
