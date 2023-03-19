@@ -1,3 +1,19 @@
-h1 {
-    color:#ADADAD;
+.header {
+    display: flex;
+    justify-content: center;
+    background-color: #f9bd0e;
+    text-align: center;
+    font-size: 2rem;
+}
+
+h1{
+    font-family:'Times New Roman', Times, serif;
+    margin-top: 35px;
+}
+
+
+img {
+    display: flex;
+    width: 18%;
+    padding-left: 20px;
 }

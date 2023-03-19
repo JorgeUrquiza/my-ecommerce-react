@@ -1,13 +1,13 @@
 import React from "react";
 import "./header.css";
-
-
+import img from "./hueso.png"
 
 const Header = () => {
     return (
-        <>
-            <h1> Navbar</h1> 
-        </>
+        <div className="header">
+            <img src={img} alt="logo" />
+            <h1>Urquiza Pet Shop</h1>
+        </div>
     );
 };
 
