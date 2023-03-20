@@ -5,13 +5,17 @@ import "./App.css";
 import Header from "./components/header/header";
 import NavBar from "./components/NavBar/NavBar";
 import CardPet from "./components/Cards/CardPet";
+import Greeting from "./components/Greeting/greeting";
 
 class App extends Component {
   render () {
     return (
     <div className="Header">
       <NavBar/> 
-      <Header/>      
+      <Header/>
+      <Greeting
+      description="Hola, ¿como estas? gracias por visitar nuestro Pet Shop, en tu primer compra tendras un 30% de descuento. En compras mayores a $10.000 siempre tendras envios gratis."
+      />
       <div className="Cards">
         <CardPet
         name="Perros" 

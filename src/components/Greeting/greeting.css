@@ -1,0 +1,6 @@
+.Greeting {
+    display: flex;
+    justify-content: center;
+    background-color: #fdcd07;
+    font-size: 0.8rem;
+}
