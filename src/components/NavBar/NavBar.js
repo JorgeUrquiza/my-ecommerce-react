@@ -2,22 +2,24 @@ import React from "react";
 import "./NavBar.css";
 import Carrito from "../Carrito/Carrito";
 
+import { Link } from "react-router-dom";
+
 const NavBar = () => {
     return ( 
         <nav className="Navigation">
             <ul>
-                <li className="Name">
+                <Link className="Name">
                     <p>Pet Shop</p>
-                </li>
-                <li className="NavLink">
-                    <a href="https://github.com/JorgeUrquiza?tab=repositories" target="_blank" rel="noopener noreferrer"> Inicio </a>
-                </li>
-                <li className="NavLink">
-                    <a href="https://github.com/JorgeUrquiza?tab=repositories" target="_blank" rel="noopener noreferrer"> Producto </a>
-                </li>
-                <li className="NavLink">
-                    <a href="https://github.com/JorgeUrquiza?tab=repositories" target="_blank" rel="noopener noreferrer"> Nosotros </a>
-                </li>
+                </Link>
+                <Link className="NavLink" to="/">
+                    Inicio
+                </Link>
+                <Link className="NavLink" to="/producto">
+                    Producto 
+                </Link>
+                <Link className="NavLink" to="/nosotros">
+                    Nosotros 
+                </Link>
                 <li className="NavLink">
                     <Carrito/>
                 </li>
