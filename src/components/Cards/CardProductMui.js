@@ -12,13 +12,16 @@ const CardProductMui = ({data}) => {
                     alt={data.Marca}
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
+                    <Typography gutterBottom variant="h5" align="center" component="div">
                         {data.Marca}
+                    </Typography>
+                    <Typography gutterBottom variant="h6" align="center" component="div">
+                        {data.Tipo}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         {data.descripcion}                        
                     </Typography>
-                    <Typography variant="h6" color="text.primary">
+                    <Typography variant="h6" align="center" color="text.primary">
                     {data.Precio}
                     </Typography>
                 </CardContent>
