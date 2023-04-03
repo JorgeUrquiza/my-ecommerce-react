@@ -1,11 +1,13 @@
 h1{
-    display: flex;
-    flex-direction: row;
+    display: grid;
     justify-content: center;
 }
 
 .Card-List {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    align-items: center;
+    gap: 5%;
+
+
 };

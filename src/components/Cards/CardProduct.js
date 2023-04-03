@@ -10,7 +10,7 @@ const CardProduct = () => {
     const [products, setProducts] = useState([]);
 
     useEffect(() => {
-        axios("https://my-json-server.typicode.com/JorgeUrquiza/ApiPets/perros").then(res =>
+        axios("https://my-json-server.typicode.com/JorgeUrquiza/ApiPets/Productos").then(res =>
         setProducts(res.data))
     }, []);
 
