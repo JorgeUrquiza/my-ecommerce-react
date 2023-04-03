@@ -17,7 +17,7 @@ const ProductDetail = () => {
 
   return (
     <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
-      <h1>Productos detalles</h1>
+      <h1>Producto seleccionado</h1>
       <CardProductMui data={Product}/>
     </div>
   )
