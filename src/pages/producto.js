@@ -1,5 +1,6 @@
 import React from "react";
 import Header from "../components/header/header";
+import CardProduct from "../components/Cards/CardProduct";
 
 
 
@@ -7,8 +8,9 @@ const Producto = () => {
     return (
         <div >
             <Header/>
-            <h1>Hola</h1>
-            <h2>Hola</h2>
+            <h1>Productos</h1>
+            <CardProduct/>
+            
 
         </div>
     );

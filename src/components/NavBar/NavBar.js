@@ -8,14 +8,14 @@ const NavBar = () => {
     return ( 
         <nav className="Navigation">
             <ul>
-                <Link className="Name">
+                <Link className="Name" to="/">
                     <p>Pet Shop</p>
                 </Link>
                 <Link className="NavLink" to="/">
                     Inicio
                 </Link>
                 <Link className="NavLink" to="/producto">
-                    Producto 
+                    Productos
                 </Link>
                 <Link className="NavLink" to="/nosotros">
                     Nosotros 
