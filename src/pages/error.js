@@ -8,7 +8,7 @@ const Error = () => {
     useEffect(() => {
         setTimeout(() => {
             navigate("/");
-        }, 4000)
+        }, 2000)
     }, [navigate])
     
     return (
