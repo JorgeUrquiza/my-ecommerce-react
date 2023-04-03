@@ -11,7 +11,9 @@ import NavBar from "./components/NavBar/NavBar";
 import Inicio from "./pages/inicio"
 import Nosotros from "./pages/nosotros"
 import Producto from "./pages/producto";
+import Error from "./pages/error";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
+
 
 
 class App extends Component {
@@ -25,6 +27,7 @@ class App extends Component {
         <Route path="/nosotros" element={<Nosotros/> } />
         <Route path="/producto" element={<Producto/> } />
         <Route path="/detail/:id" element={<ProductDetail/> } />
+        <Route path="*" element={<Error/> } />
       </Routes>
     </div>
     </Router>

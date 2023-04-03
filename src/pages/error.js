@@ -1,11 +1,21 @@
-import React from "react";
+import React, {useEffect} from "react";
+import  { Alert }  from "@mui/material";
+import { useNavigate } from "react-router-dom";
 
-const error = () => {
+const Error = () => {
+
+    const navigate = useNavigate();
+    useEffect(() => {
+        setTimeout(() => {
+            navigate("/");
+        }, 4000)
+    }, [navigate])
+    
     return (
     <div>
-        <h1>Esta dirección no existe...</h1>
+        <Alert saverity="Error"> Pagina no encontrada | 404 </Alert>
     </div>
     );
 };
 
-export default error;
+export default Error;
