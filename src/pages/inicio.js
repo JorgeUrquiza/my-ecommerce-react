@@ -8,6 +8,7 @@ const Inicio = () => {
         <div>
             <Header />
             <Greeting description="Hola, ¿como estas? gracias por visitar nuestro Pet Shop, en tu primer compra tendras un 30% de descuento. En compras mayores a $10.000 siempre tendras envios gratis." />
+            <h1>Amamos a tus mascotas, por eso contamos con gran variedad de productos y servicios:</h1>
             <div className="Cards">
                 <CardPet
                     name="Perros"
