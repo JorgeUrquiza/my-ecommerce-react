@@ -10,6 +10,7 @@ const CardProductMui = ({data}) => {
                     component="img"
                     image={data.img}
                     alt={data.Marca}
+                    height="300"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" align="center" component="div">
@@ -20,7 +21,7 @@ const CardProductMui = ({data}) => {
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
                         {data.descripcion}                        
-                    </Typography>
+                    </Typography> 
                     <Typography variant="h6" align="center" color="text.primary">
                     {data.Precio}
                     </Typography>
