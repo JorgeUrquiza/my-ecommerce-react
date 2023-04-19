@@ -15,9 +15,9 @@ import {
 
 const ProductDetail = () => {
 
-    let { id } = useParams(); //listo
+    let { id } = useParams(); 
 
-    const [productData, setProductData] = useState([]); //listo
+    const [productData, setProductData] = useState([]); 
 
     console.log(productData);
 
