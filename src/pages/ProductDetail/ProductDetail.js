@@ -35,7 +35,7 @@ const ProductDetail = () => {
             setProductData(docs);
         };
         getProducts();
-    }, []);
+    }, [id]);
 
     return (
         <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
