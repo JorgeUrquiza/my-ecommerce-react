@@ -41,7 +41,7 @@ const ProductDetail = () => {
         <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
             <h1>Producto seleccionado</h1>
             {productData.map((product) => {
-                return <CardProductMui data={product} />;
+                return <CardProductMui data={product} key={product.id}/>;
             })}
         </div>
     );
