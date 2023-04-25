@@ -11,10 +11,10 @@ const CardProduct = () => {
 
     const [products, setProducts] = useState([]);
 
-    const q = query(collection(db, "products"));
 
     useEffect(() => {
         const getProducts = async () => {
+            const q = query(collection(db, "products"));
             const querySnapshot = await getDocs(q);
             const docs = [];
             querySnapshot.forEach((doc) => {
@@ -23,7 +23,7 @@ const CardProduct = () => {
             setProducts(docs);
         };
         getProducts();
-    },[]);
+    }, []);
 
     return (
         <div className="Card-List">

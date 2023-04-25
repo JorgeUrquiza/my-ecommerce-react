@@ -1,9 +1,21 @@
-
-h2{
+h2 {
     text-align: center;
 }
 
-.descripcion{
-    height: 100%;
-    font-size: 1.2rem;
+.seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.text-column{
+    width: 50%;
+    line-height: 1.8rem; 
+
+}
+
+
+img{
+    width: 50%;
 }

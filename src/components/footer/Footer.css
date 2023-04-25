@@ -3,13 +3,13 @@
     justify-content: space-around;
     align-items: center;
     box-sizing: border-box;
-    background-color: #f9bd0e;
+    background-color: #1f1f1f;
     padding: 1rem;
     font-family:'Times New Roman', Times, serif;
     font-size: 1.2rem;
-    color: black;
+    color: white;
     bottom: 0;
-    width: 100%
+    width: 100%;
 }
 
 .footer-column {
@@ -22,11 +22,11 @@
     display: flex;
     justify-content: space-between;
     width: 80px;
-    color: black;
+    color: white;
 }
 
 .social-links a {
-    color: #000000;
+    color: white;
     text-decoration: none;
 }
 
