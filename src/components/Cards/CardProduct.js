@@ -23,7 +23,7 @@ const CardProduct = () => {
             setProducts(docs);
         };
         getProducts();
-    }, [q]);
+    }, []);
 
     return (
         <div className="Card-List">
