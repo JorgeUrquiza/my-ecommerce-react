@@ -20,9 +20,9 @@
 
 .social-links {
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
-    width: 80px;
-    color: white;
+
 }
 
 .social-links a {
@@ -34,9 +34,4 @@
     color: #007bff;
 }
 
-.fa-facebook-f,
-.fa-instagram,
-.fa-github {
-    font-size: 1.2rem;
-    margin: 0 0.2rem;
-}
+
