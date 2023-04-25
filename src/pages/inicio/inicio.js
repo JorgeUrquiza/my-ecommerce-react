@@ -1,8 +1,8 @@
 import React from "react";
-import Header from "../components/header/header";
-import CardPet from "../components/Cards/CardPet";
-import Greeting from "../components/Greeting/greeting";
-import Footer from "../components/footer/Footer";
+import Header from "../../components/header/header";
+import CardPet from "../../components/Cards/CardPet";
+import Greeting from "../../components/Greeting/greeting";
+import Footer from "../../components/footer/Footer";
 import "./inicio.css";
 
 import img from "./pexels-blue-bird-7210748.jpg";

@@ -9,8 +9,8 @@ import NavBar from "./components/NavBar/NavBar";
 import { CartProvider } from "./contexts/ItemsContext";
 
 //Pages
-import Inicio from "./pages/inicio";
-import Nosotros from "./pages/nosotros";
+import Inicio from "./pages/inicio/inicio";
+import Nosotros from "./pages/nosotros/nosotros";
 import Producto from "./pages/producto";
 import Error from "./pages/error";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";

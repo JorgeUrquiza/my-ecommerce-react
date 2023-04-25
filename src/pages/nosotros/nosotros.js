@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
-import Header from "../components/header/header";
-import Greeting from "../components/Greeting/greeting";
+import Header from "../../components/header/header";
+import Greeting from "../../components/Greeting/greeting";
 import { useNavigate } from "react-router-dom";
 
 
