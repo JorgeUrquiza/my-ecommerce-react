@@ -11,3 +11,26 @@ const Carrito = () => {
 }
 
 export default Carrito;
+
+// import React, { useContext } from "react";
+// import { CartContext } from "../../contexts/ItemsContext";
+
+// const Carrito = () => {
+//     const { cartItems, getCartTotal, removeFromCart } = useContext(CartContext);
+
+//     return (
+//         <div>
+//             <h2>Cart</h2>
+//             {cartItems.map((item) => (
+//                 <div key={item.id}>
+//                     <p>{item.name}</p>
+//                     <p>${item.price}</p>
+//                     <button onClick={() => removeFromCart(item)}>Remove</button>
+//                 </div>
+//             ))}
+//             <p>Total: ${getCartTotal()}</p>
+//         </div>
+//     );
+// };
+
+// export default Carrito;

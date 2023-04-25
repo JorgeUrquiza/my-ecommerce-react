@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import axios from "axios";
 import { useParams } from "react-router-dom";
 import CardProductMui from "../../components/Cards/CardProductMui";
 
@@ -35,7 +34,7 @@ const ProductDetail = () => {
             setProductData(docs);
         };
         getProducts();
-    }, [id]);
+    }, []);
 
     return (
         <div style={{display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>

@@ -1,24 +1,30 @@
-import React, {useState, createContext} from "react";
+import React, { useState, createContext } from "react";
 
-export const ItemsContext = createContext();
+export const CartContext = createContext();
 
-const initialState = () => [
-	{
-		id: 45454,
-		artist: 'The Cure',
-		title: 'The head of the door',
-		price: 12,
-		stock: 4,
-		year: 1985,
-	},
-];
+export const CartProvider = ({ children }) => {
+    const [cartItems, setCartItems] = useState([]);
 
-export const ItemsProvider = ({ children }) => {
-	const [items, setItems] = useState([initialState]);
+    const addToCart = (item) => {
+        setCartItems([...cartItems, item]);
+    };
 
-	return (
-		<ItemsContext.Provider value={[items, setItems]}>
-			{children}
-		</ItemsContext.Provider>
-	);
+    const removeFromCart = (itemToRemove) => {
+        const newItems = cartItems.filter(
+            (item) => item.id !== itemToRemove.id
+        );
+        setCartItems(newItems);
+    };
+
+    const getCartTotal = () => {
+        return cartItems.reduce((total, item) => total + item.price, 0);
+    };
+
+    return (
+        <CartContext.Provider
+            value={{ cartItems, addToCart, removeFromCart, getCartTotal }}
+        >
+            {children}
+        </CartContext.Provider>
+    );
 };

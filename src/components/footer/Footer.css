@@ -1,0 +1,42 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: #f9bd0e;
+    padding: 1rem;
+    font-family:'Times New Roman', Times, serif;
+    font-size: 1.2rem;
+    color: black;
+    bottom: 0;
+    width: 100%
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: space-between;
+    width: 80px;
+    color: black;
+}
+
+.social-links a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #007bff;
+}
+
+.fa-facebook-f,
+.fa-instagram,
+.fa-github {
+    font-size: 1.2rem;
+    margin: 0 0.2rem;
+}
