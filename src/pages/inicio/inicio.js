@@ -5,7 +5,7 @@ import Greeting from "../../components/Greeting/greeting";
 import Footer from "../../components/footer/Footer";
 import "./inicio.css";
 
-import img from "./pexels-blue-bird-7210748.jpg";
+import img from "../../assets/mascotaJuguete.jpg";
 
 const Inicio = () => {
     return (
@@ -40,35 +40,22 @@ const Inicio = () => {
             </div>
             <section className="seccion">
                 <div className="text-column">
-                    <h2>Nuestra Mision</h2>
+                    <h2>Todos los miercoles 2x1 en juguetes</h2>
                     <p>
-                        En nuestra tienda de mascotas, estamos comprometidos con
-                        el bienestar de tus compañeros peludos. Nuestra misión
-                        es ofrecer los mejores alimentos y servicios para el
-                        cuidado de mascotas, para asegurarnos de que tus amigos
-                        de cuatro patas estén sanos y felices. Sabemos lo
-                        importante que son tus mascotas para ti, por eso nos
-                        aseguramos de tener los mejores alimentos y productos en
-                        nuestras estanterías. Trabajamos con proveedores de
-                        renombre, que ofrecen alimentos de alta calidad y
-                        nutrición balanceada para todas las etapas de vida de tu
-                        mascota. Además, nuestra tienda cuenta con un equipo de
-                        expertos en cuidado de mascotas, quienes te brindarán
-                        consejos y recomendaciones para cuidar adecuadamente de
-                        tus compañeros peludos. Desde el aseo y la higiene,
-                        hasta la prevención de enfermedades, nuestros expertos
-                        están aquí para ayudarte en todo lo que necesites.
-                        También ofrecemos servicios de peluquería y cuidado,
-                        para que tu mascota luzca siempre hermosa y saludable.
-                        Nuestros estilistas caninos y felinos están altamente
-                        capacitados para brindar los mejores cuidados,
-                        respetando siempre las necesidades y preferencias de
-                        cada mascota. En nuestra tienda, queremos que te sientas
-                        en confianza al elegir los alimentos y productos para el
-                        cuidado de tus mascotas. Por eso, nos aseguramos de
-                        ofrecer una amplia gama de opciones y precios para que
-                        encuentres lo que mejor se adapte a tus necesidades y
-                        presupuesto.
+                        ¡Bienvenidos a nuestro Petshop! ¡Tenemos una gran
+                        noticia para todos los amantes de las mascotas! A partir
+                        de hoy, todos los miércoles tendrás la oportunidad de
+                        conseguir 2 x 1 en juguetes para tus peludos amigos.
+                        Sabemos que tu mascota es parte de tu familia y que
+                        quieres lo mejor para ella. Es por eso que ofrecemos una
+                        gran variedad de juguetes de alta calidad y durabilidad
+                        que garantizan horas de diversión para tu compañero
+                        peludo. Además, ahora es el momento perfecto para
+                        consentir a tu mascota sin preocuparte por el
+                        presupuesto. Con nuestra promoción 2 x 1 en juguetes
+                        para mascotas, podrás llevarte dos juguetes por el
+                        precio de uno. ¡Así que no esperes más y ven a
+                        visitarnos!
                     </p>
                 </div>
                 <div className="image-column">
