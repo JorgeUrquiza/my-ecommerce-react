@@ -2,6 +2,8 @@ import React, { useEffect } from "react";
 import Header from "../../components/header/header";
 import Greeting from "../../components/Greeting/greeting";
 import { useNavigate } from "react-router-dom";
+import Footer from "../../components/footer/Footer";
+
 
 
 
@@ -18,6 +20,7 @@ const Nosotros = () => {
         <div >
             <Header/>
             <Greeting description="Pagina en proceso, usted va a ser redirigido, disculpe las molestias..."/>
+            <Footer/>
         </div>
     );
 }

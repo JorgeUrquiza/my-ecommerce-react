@@ -2,6 +2,8 @@ import React from "react";
 import Header from "../components/header/header";
 import CardProduct from "../components/Cards/CardProduct";
 import Greeting from "../components/Greeting/greeting";
+import Footer from "../components/footer/Footer";
+
 
 
 const Producto = () => {
@@ -15,6 +17,8 @@ const Producto = () => {
             <div style={{padding:"1%", position:"relative", minHeight:"100vh"}}>
             <CardProduct/>
             </div>  
+            <Footer />
+
         </div>
     );
 }

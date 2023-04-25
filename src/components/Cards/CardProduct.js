@@ -11,7 +11,6 @@ const CardProduct = () => {
 
     const [products, setProducts] = useState([]);
 
-
     useEffect(() => {
         const getProducts = async () => {
             const q = query(collection(db, "products"));
