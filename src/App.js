@@ -14,6 +14,7 @@ import Nosotros from "./pages/nosotros/nosotros";
 import Producto from "./pages/producto";
 import Error from "./pages/error";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
+import Shop from "./pages/shop/Shop";
 
 class App extends Component {
     render() {
@@ -26,10 +27,8 @@ class App extends Component {
                             <Route path="/" element={<Inicio />} />
                             <Route path="/nosotros" element={<Nosotros />} />
                             <Route path="/producto" element={<Producto />} />
-                            <Route
-                                path="/detail/:id"
-                                element={<ProductDetail />}
-                            />
+                            <Route path="/detail/:id" element={<ProductDetail />} />
+                            <Route path="/Shop" element={<Shop />} />
                             <Route path="*" element={<Error />} />
                         </Routes>
                     </div>
