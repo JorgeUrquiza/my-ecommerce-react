@@ -15,6 +15,7 @@ const CardProductMui = ({ data }) => {
 
     const handleAddToCart = () => {
         addToCart(data);
+        
     };
 
     return (
@@ -69,3 +70,4 @@ const CardProductMui = ({ data }) => {
 };
 
 export default CardProductMui;
+
