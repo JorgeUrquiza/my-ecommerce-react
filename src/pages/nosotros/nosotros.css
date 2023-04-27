@@ -1,0 +1,22 @@
+.seccion {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 5%;
+}
+
+.text-column-about{
+    width: 50%;
+    line-height: 1.8rem; 
+}
+
+img{
+    width: 50%;
+}
+
+.image-column2{
+    padding-left: 4%;
+    padding-top: 4%;
+    width: 50%;
+}
+
