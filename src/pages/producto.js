@@ -3,6 +3,7 @@ import Header from "../components/header/header";
 import CardProduct from "../components/Cards/CardProduct";
 import Greeting from "../components/Greeting/greeting";
 import Footer from "../components/footer/Footer";
+import "./producto.css"
 
 
 
@@ -10,15 +11,14 @@ const Producto = () => {
 
 
     return (
-        <div >
+        <div className="padre" >
             <Header/>
             <Greeting description="¿Te olvidaste? Bueno te lo recuerdo, de lunes a miércoles tienes 50% de descuento en la segunda unidad de los productos más vendidos." />
             <h1>Productos mas vendidos</h1>
-            <div style={{padding:"1%", position:"relative", minHeight:"100vh"}}>
-            <CardProduct/>
-            </div>  
-            <Footer />
-
+            <div className="cards">
+            <CardProduct/>            
+            </div> 
+            <Footer />            
         </div>
     );
 }

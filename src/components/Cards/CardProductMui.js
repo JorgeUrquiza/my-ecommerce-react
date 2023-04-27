@@ -15,10 +15,11 @@ const CardProductMui = ({ data }) => {
 
     const handleAddToCart = () => {
         addToCart(data);
+        
     };
 
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={{ maxWidth: 345, minHeight:650 }}>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -69,3 +70,4 @@ const CardProductMui = ({ data }) => {
 };
 
 export default CardProductMui;
+
