@@ -1,11 +1,12 @@
 import React from "react";
 import "./NavBar.css";
 import Carrito from "../Carrito/Carrito";
+import MenuCategory from "../menuCategory/MenuCategory";
 
 import { Link } from "react-router-dom";
 
 const NavBar = () => {
-    return ( 
+    return (
         <nav className="Navigation">
             <ul>
                 <Link className="Name" to="/">
@@ -17,15 +18,16 @@ const NavBar = () => {
                 <Link className="NavLink" to="/producto">
                     Productos
                 </Link>
+                <MenuCategory/>
                 <Link className="NavLink" to="/nosotros">
-                    Nosotros 
+                    Nosotros
                 </Link>
                 <li className="NavLink">
                     <Carrito/>
                 </li>
             </ul>
         </nav>
-    ) 
+    )
 };
 
 export default NavBar;

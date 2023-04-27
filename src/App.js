@@ -15,6 +15,8 @@ import Producto from "./pages/producto";
 import Error from "./pages/error";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import Shop from "./pages/shop/Shop";
+import MenuCategory from "./components/menuCategory/MenuCategory";
+import Categorias from "./pages/categorias/categorias";
 
 class App extends Component {
     render() {
@@ -28,6 +30,7 @@ class App extends Component {
                             <Route path="/nosotros" element={<Nosotros />} />
                             <Route path="/producto" element={<Producto />} />
                             <Route path="/detail/:id" element={<ProductDetail />} />
+                            <Route path="/categoria/:categoria" element={<Categorias />} />
                             <Route path="/Shop" element={<Shop />} />
                             <Route path="*" element={<Error />} />
                         </Routes>
