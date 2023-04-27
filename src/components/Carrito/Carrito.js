@@ -10,6 +10,7 @@ const Carrito = () => {
             <AddShoppingCartIcon/>
             {cartItems.map((product) => (
                 <div key={product.id}>
+                    <span>{cartItems.length}</span>
                     <p>{product.marca}</p>
                     <p>${product.precio}</p>
                     <button onClick={() => removeFromCart(product)}>Remove</button>
