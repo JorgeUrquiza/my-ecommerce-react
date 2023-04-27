@@ -15,7 +15,6 @@ import Producto from "./pages/producto";
 import Error from "./pages/error";
 import ProductDetail from "./pages/ProductDetail/ProductDetail";
 import Shop from "./pages/shop/Shop";
-import MenuCategory from "./components/menuCategory/MenuCategory";
 import Categorias from "./pages/categorias/categorias";
 
 class App extends Component {
