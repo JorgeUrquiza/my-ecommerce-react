@@ -8,11 +8,11 @@ const Carrito = () => {
     return (
         <div>
             <AddShoppingCartIcon/>
-            {cartItems.map((item) => (
-                <div key={item.id}>
-                    <p>{item.name}</p>
-                    <p>${item.price}</p>
-                    <button onClick={() => removeFromCart(item)}>Remove</button>
+            {cartItems.map((product) => (
+                <div key={product.id}>
+                    <p>{product.marca}</p>
+                    <p>${product.precio}</p>
+                    <button onClick={() => removeFromCart(product)}>Remove</button>
                 </div>
             ))}
             <p>Total: ${getCartTotal()}</p>

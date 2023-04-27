@@ -1,8 +1,22 @@
 import * as React from "react";
-import {Card, CardContent, CardMedia, Typography, CardActionArea } from "@mui/material";
+import {
+    Card,
+    CardContent,
+    CardMedia,
+    Typography,
+    CardActionArea,
+    Button,
+} from "@mui/material";
+import { useContext } from "react";
+import { CartContext } from "../../contexts/ItemsContext";
 
+const CardProductMui = ({ data }) => {
+    const { addToCart } = useContext(CartContext);
 
-const CardProductMui = ({data}) => {
+    const handleAddToCart = () => {
+        addToCart(data);
+    };
+
     return (
         <Card sx={{ maxWidth: 345 }}>
             <CardActionArea>
@@ -13,22 +27,41 @@ const CardProductMui = ({data}) => {
                     height="300"
                 />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" align="center" component="div">
+                    <Typography
+                        gutterBottom
+                        variant="h5"
+                        align="center"
+                        component="div"
+                    >
                         {data.marca}
                     </Typography>
-                    <Typography gutterBottom variant="h6" align="center" component="div">
+                    <Typography
+                        gutterBottom
+                        variant="h6"
+                        align="center"
+                        component="div"
+                    >
                         {data.tipo}
                     </Typography>
                     <Typography variant="body2" color="text.secondary">
-                        {data.descripcion}                        
-                    </Typography> 
-                    <Typography variant="h6" align="center" color="text.primary">
-                    {"$" + data.precio}
+                        {data.descripcion}
+                    </Typography>
+                    <Typography
+                        variant="h6"
+                        align="center"
+                        color="text.primary"
+                    >
+                        {"$" + data.precio}
+                    </Typography>
+                    <Typography>
+                        <Button variant="contained" color="primary" onClick={handleAddToCart}>
+                            Agregar al carrito
+                        </Button>
                     </Typography>
                 </CardContent>
             </CardActionArea>
         </Card>
     );
-}
+};
 
 export default CardProductMui;
