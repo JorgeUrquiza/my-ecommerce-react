@@ -53,13 +53,17 @@ const CardProductMui = ({ data }) => {
                     >
                         {"$" + data.precio}
                     </Typography>
-                    <Typography>
-                        <Button variant="contained" color="primary" onClick={handleAddToCart}>
-                            Agregar al carrito
-                        </Button>
-                    </Typography>
                 </CardContent>
             </CardActionArea>
+            <Typography align="center">
+                <Button
+                    variant="contained"
+                    color="primary"
+                    onClick={handleAddToCart}
+                >
+                    Agregar al carrito
+                </Button>
+            </Typography>
         </Card>
     );
 };

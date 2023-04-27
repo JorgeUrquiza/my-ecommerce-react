@@ -13,7 +13,7 @@ const Carrito = () => {
                     <span>{cartItems.length}</span>
                     <p>{product.marca}</p>
                     <p>${product.precio}</p>
-                    <button onClick={() => removeFromCart(product)}>Remove</button>
+                    <button onClick={() => removeFromCart(product)}>Remove</button> 
                 </div>
             ))}
             <p>Total: ${getCartTotal()}</p>
