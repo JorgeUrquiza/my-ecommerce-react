@@ -17,8 +17,6 @@ const Categorias = () => {
 
     let { categoria } = useParams();
 
-    console.log(categoria);
-
     useEffect(() => {
         const getProducts = async () => {
             const q = query(
