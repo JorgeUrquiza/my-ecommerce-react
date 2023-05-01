@@ -1,6 +1,9 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../contexts/ItemsContext";
 import "./Shop.css";
+import Button from "@mui/material/Button";
+
+import DeleteIcon from "@mui/icons-material/Delete";
 
 const Shop = () => {
     const { cartItems, getCartTotal, removeFromCart } = useContext(CartContext);
@@ -15,15 +18,18 @@ const Shop = () => {
                         <span>Cantidad: {product.cantidad}</span>
                         <p>{product.marca}</p>
                         <p>${product.precio}</p>
-                        <button onClick={() => removeFromCart(product, true)}>
-                            Eliminar unidad
-                        </button>
-                        <button onClick={() => removeFromCart(product)}>
-                            Eliminar Producto
-                        </button>
+                        <Button variant="outlined" color="error" onClick={() => removeFromCart(product, true)}> Menos Unidad </Button>
+                        <Button
+                            variant="outlined"
+                            startIcon={<DeleteIcon />}
+                            color="error"
+                            onClick={() => removeFromCart(product)}
+                        >
+                            Eliminar                           
+                        </Button>
                     </div>
                 ))}
-                <p>Total: ${getCartTotal()}</p>
+                <p className="total">Total: ${getCartTotal()}</p>
             </div>
         </div>
     );

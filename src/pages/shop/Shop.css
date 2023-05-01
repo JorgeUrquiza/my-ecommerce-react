@@ -1,7 +1,8 @@
 .shopContainer {
     max-width: 800px;
-    margin: 0 auto;
+    margin: 3% auto;
     padding: 20px;
+    background-color: white;
 }
 
 .cartItem {
@@ -20,8 +21,11 @@
     font-weight: bold;
 }
 
-.cartItem p {
-    margin-right: 20px;
+.total {
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+
 }
 
 .cartItem button {
