@@ -7,6 +7,7 @@ import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase/firebaseConfig";
 import ShippingSuccess from "../../components/ShippingSuccess/ShippingSuccess";
 
+
 const initialState = {
     name: "",
     lastName: "",
@@ -19,6 +20,7 @@ const Shop = () => {
     const [values, setValues] = useState(initialState);
     
     const [enviosId, setEnviosId] = useState("");
+    const [formError, setFormError] = useState(false);
 
     const onChange = (e) => {
         const { value, name } = e.target;
@@ -27,11 +29,16 @@ const Shop = () => {
 
     const onSubmit = async (e) => {
         e.preventDefault();
+        if (values.name.length < 3 || values.lastName.length < 3 || values.city.length < 5) {
+            setFormError(true);
+            return;
+        }
         const docRef = await addDoc(collection(db, "envios"), {
             values,
         });
         setEnviosId(docRef.id)
         setValues(initialState);
+        setFormError(false);
     };
 
     return (
@@ -70,6 +77,7 @@ const Shop = () => {
                     name="name"
                     value={values.name}
                     onChange={onChange}
+                    required
                 />
                 <TextField
                     placeholder="Apellido"
@@ -77,6 +85,7 @@ const Shop = () => {
                     name="lastName"
                     value={values.lastName}
                     onChange={onChange}
+                    required
                 />
                 <TextField
                     placeholder="Dirección"
@@ -84,10 +93,16 @@ const Shop = () => {
                     name="city"
                     value={values.city}
                     onChange={onChange}
+                    required
                 />
+                <div className="buttonContainer">
                     <Button variant="contained" color="success" type="submit" >
-                    Finalizar Compra
+                        Finalizar Compra
                     </Button>
+                    {formError && (
+                        <p className="formError">Por favor complete todos los campos requeridos correctamente.</p>
+                    )}
+                </div>
             </form>
             {enviosId.length ? <ShippingSuccess enviosId={enviosId}/> : null}            
         </div>
@@ -95,4 +110,3 @@ const Shop = () => {
 };
 
 export default Shop;
-
