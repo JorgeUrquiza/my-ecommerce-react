@@ -31,3 +31,10 @@
 .cartItem button {
     margin-left: auto;
 }
+
+.FormContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+

@@ -4,7 +4,7 @@ import Stack from "@mui/material/Stack";
 
 const ShippingSuccess = ({ enviosId }) => {
     return (
-        <Stack sx={{ width: "100%" }} spacing={2}>
+        <Stack sx={{ width: "100%", my: "2%" }} spacing={2}>
             <Alert severity="success">
                 Gracias por su compra, su codigo de envio es: {enviosId}
             </Alert>

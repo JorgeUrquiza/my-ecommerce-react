@@ -3,11 +3,8 @@ import { CartContext } from "../../contexts/ItemsContext";
 import "./Shop.css";
 import { Button, TextField } from "@mui/material/";
 import DeleteIcon from "@mui/icons-material/Delete";
-
-//nuevo
 import { collection, addDoc } from "firebase/firestore";
 import { db } from "../../firebase/firebaseConfig";
-
 import ShippingSuccess from "../../components/ShippingSuccess/ShippingSuccess";
 
 const initialState = {
@@ -19,7 +16,6 @@ const initialState = {
 const Shop = () => {
     const { cartItems, getCartTotal, removeFromCart } = useContext(CartContext);
 
-    // nuevo
     const [values, setValues] = useState(initialState);
     
     const [enviosId, setEnviosId] = useState("");
@@ -31,7 +27,6 @@ const Shop = () => {
 
     const onSubmit = async (e) => {
         e.preventDefault();
-        // Add a new document with a generated id.
         const docRef = await addDoc(collection(db, "envios"), {
             values,
         });
@@ -69,33 +64,31 @@ const Shop = () => {
                 ))}
                 <p className="total">Total: ${getCartTotal()}</p>
             </div>
-
-            {/* nuevo */}
             <form className="FormContainer" onSubmit={onSubmit}>
                 <TextField
-                    placeholder="Name"
+                    placeholder="Nombre"
                     style={{ margin: 10, width: 400 }}
                     name="name"
                     value={values.name}
                     onChange={onChange}
                 />
                 <TextField
-                    placeholder="Last Name"
+                    placeholder="Apellido"
                     style={{ margin: 10, width: 400 }}
                     name="lastName"
                     value={values.lastName}
                     onChange={onChange}
                 />
                 <TextField
-                    placeholder="City"
+                    placeholder="Dirección"
                     style={{ margin: 10, width: 400 }}
                     name="city"
                     value={values.city}
                     onChange={onChange}
                 />
-                <button className="btnASendAction" type="submit">
+                    <Button variant="contained" color="success" type="submit">
                     Finalizar Compra
-                </button>
+                    </Button>
             </form>
             {enviosId.length ? <ShippingSuccess enviosId={enviosId}/> : null}            
         </div>
@@ -103,3 +96,4 @@ const Shop = () => {
 };
 
 export default Shop;
+
