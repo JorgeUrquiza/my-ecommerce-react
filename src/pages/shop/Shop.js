@@ -48,9 +48,8 @@ const Shop = () => {
                             variant="outlined"
                             color="error"
                             onClick={() => removeFromCart(product, true)}
-                        >
-                            {" "}
-                            Menos Unidad{" "}
+                        >                          
+                            Menos Unidad
                         </Button>
                         <Button
                             variant="outlined"
@@ -86,7 +85,7 @@ const Shop = () => {
                     value={values.city}
                     onChange={onChange}
                 />
-                    <Button variant="contained" color="success" type="submit">
+                    <Button variant="contained" color="success" type="submit" >
                     Finalizar Compra
                     </Button>
             </form>
