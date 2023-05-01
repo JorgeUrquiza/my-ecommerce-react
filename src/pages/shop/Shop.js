@@ -1,19 +1,20 @@
 import React, { useContext } from "react";
 import { CartContext } from "../../contexts/ItemsContext";
-import AddShoppingCartIcon from '@mui/icons-material/AddShoppingCart';
+import "./Shop.css"
 
 const Shop = () => {
     const { cartItems, getCartTotal, removeFromCart } = useContext(CartContext);
 
     return (
-        <div>
-            <AddShoppingCartIcon/>
+        <div className="shopContainer"> 
+            <h1>Carrito</h1>
             {cartItems.map((product) => (
                 <div key={product.id}>
-                    <span>{cartItems.length}</span>
+                    <span>{product.cantidad}</span>
                     <p>{product.marca}</p>
-                    <p>${product.precio}</p>
+                    <p>${product.precio * product.cantidad}</p>
                     <button onClick={() => removeFromCart(product)}>Remove</button>
+                    <button onClick={() => removeFromCart(product, true)}>Remove One</button>
                 </div>
             ))}
             <p>Total: ${getCartTotal()}</p>
@@ -22,3 +23,4 @@ const Shop = () => {
 };
 
 export default Shop;
+
