@@ -5,8 +5,6 @@ import AddShoppingCartIcon from "@mui/icons-material/AddShoppingCart";
 const Carrito = () => {
     const { cartItems } = useContext(CartContext);
 
-
-
     return (
         <div>
             <AddShoppingCartIcon />
