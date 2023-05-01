@@ -1,70 +1,19 @@
-# Getting Started with Create React App
+# Proyecto React Js de CoderHouse
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Almuno:**  Jorge Gabriel Urquiza. 
 
-## Available Scripts
+# Dependencias
 
-In the project directory, you can run:
+ - [x] Material UI 
+ - [x] React Router Dom
+ - [x] Firebase
+ - [x] Context
+  
 
-### `npm start`
+## Descripción del proyecto 
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Este proyecto es un ecommerce desarrollado en React JS para el curso de Coderhouse. Se trata de una tienda virtual de productos para mascotas, en la cual se pueden adquirir alimentos para perros, gatos y peces.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Entre las tecnologías utilizadas para su desarrollo se encuentran Context, Material UI, React Router Dom y Firebase, lo que permitió crear una experiencia de usuario fluida y dinámica.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+La utilización de Context permitió gestionar el estado de la aplicación de manera sencilla y escalable, mientras que Material UI brindó un conjunto de componentes predefinidos para mejorar la apariencia visual y la usabilidad del ecommerce. Por otro lado, React Router Dom facilitó la navegación por las distintas secciones del sitio, y Firebase fue utilizado para el almacenamiento y gestión de los datos de los productos y los envios solicitados desde la aplicación .
