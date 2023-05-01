@@ -8,6 +8,7 @@
 }
 
 .estilos:hover {
-    color: grey;
+    background-color: #1f1f1f !important;
+    color: grey !important;
     font-size: 1.3rem !important;
 }
