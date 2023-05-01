@@ -2,6 +2,7 @@ import * as React from "react";
 import Button from "@mui/material/Button";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
+import "./MenuCategory.css"
 
 import { Link } from "react-router-dom";
 
@@ -16,13 +17,6 @@ const MenuCategory = () => {
     };
 
     const styles = {
-        popUpBtn: {
-            textDecoration: "none",
-            color: "white",
-            fontSize: 16,
-            fontWeight: "500",
-            textTransform: "lowercase",
-        },
         upperText: {
             textTransform: "uppercase",
         },
@@ -35,15 +29,14 @@ const MenuCategory = () => {
 
     return (
         <div>
-            <Button
-                style={styles.popUpBtn}
+            <Button className="estilos"
                 id="basic-button"
                 aria-controls={open ? "basic-menu" : undefined}
                 aria-haspopup="true"
                 aria-expanded={open ? "true" : undefined}
                 onClick={handleClick}
             >
-                <span style={styles.upperText}>Categorias</span>
+                <span>Categorias</span>
             </Button>
             <Menu
                 id="basic-menu"
