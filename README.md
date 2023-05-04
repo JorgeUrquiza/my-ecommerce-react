@@ -17,3 +17,5 @@ Este proyecto es un ecommerce desarrollado en React JS para el curso de Coderhou
 Entre las tecnologías utilizadas para su desarrollo se encuentran Context, Material UI, React Router Dom y Firebase, lo que permitió crear una experiencia de usuario fluida y dinámica.
 
 La utilización de Context permitió gestionar el estado de la aplicación de manera sencilla y escalable, mientras que Material UI brindó un conjunto de componentes predefinidos para mejorar la apariencia visual y la usabilidad del ecommerce. Por otro lado, React Router Dom facilitó la navegación por las distintas secciones del sitio, y Firebase fue utilizado para el almacenamiento y gestión de los datos de los productos y los envios solicitados desde la aplicación .
+
+![Proyecto Coder Gif](https://user-images.githubusercontent.com/112591217/236344610-783c962b-b5c3-45a0-9679-d885652bb20d.gif)
