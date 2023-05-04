@@ -18,6 +18,6 @@ Entre las tecnologías utilizadas para su desarrollo se encuentran Context, Mate
 
 La utilización de Context permitió gestionar el estado de la aplicación de manera sencilla y escalable, mientras que Material UI brindó un conjunto de componentes predefinidos para mejorar la apariencia visual y la usabilidad del ecommerce. Por otro lado, React Router Dom facilitó la navegación por las distintas secciones del sitio, y Firebase fue utilizado para el almacenamiento y gestión de los datos de los productos y los envios solicitados desde la aplicación .
 
-## Vista previa animada de nuestra página en acción
+## Vista previa animada de la web en acción
 
 ![Proyecto Coder Gif](https://user-images.githubusercontent.com/112591217/236347328-ab61ef91-5ed7-413a-86b0-1d848b15e5bf.gif)
